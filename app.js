@@ -41,6 +41,12 @@ app.get("/", (req, res) => {
     res.render("index", { files });
 });
 
+// GET route to view PDF
+app.get("/:file", (req, res) => {
+    const file = files.find(f => f.name === req.params.file);
+    res.render("index", { files, file });
+});
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
     const err = new Error('Not Found');
