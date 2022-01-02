@@ -1,7 +1,9 @@
 'use strict';
 const debug = require('debug')('my express app');
 const express = require('express');
+const ejs = require('ejs');
 const path = require('path');
+const fs = require('fs');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
@@ -11,6 +13,15 @@ const routes = require('./routes/index');
 const users = require('./routes/users');
 
 const app = express();
+const dirPath = path.join(__dirname, "public/pdfs");
+
+// read pdf files
+const files = fs.readdirSync(dirPath).map(name => {
+    return {
+        name: path.basename(name, ".pdf"),
+        url: `/pdfs/${name}`
+    };
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
