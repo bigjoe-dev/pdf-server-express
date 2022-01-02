@@ -30,6 +30,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="public\imgs\logo.svg" />
     <Content Include="public\pdfs\annotations.pdf" />
     <Content Include="public\pdfs\form.pdf" />
     <Content Include="public\pdfs\hello.pdf" />
@@ -46,6 +47,7 @@
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="public\images\" />
+    <Folder Include="public\imgs\" />
     <Folder Include="public\javascripts\" />
     <Folder Include="public\pdfs\" />
     <Folder Include="public\stylesheets\" />
