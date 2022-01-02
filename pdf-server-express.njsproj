@@ -30,6 +30,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="public\pdfs\annotations.pdf" />
+    <Content Include="public\pdfs\form.pdf" />
+    <Content Include="public\pdfs\hello.pdf" />
+    <Content Include="public\pdfs\scientific.pdf" />
     <Content Include="routes\index.js" />
     <Content Include="routes\users.js" />
     <Content Include="package.json" />
@@ -43,6 +47,7 @@
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
+    <Folder Include="public\pdfs\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
